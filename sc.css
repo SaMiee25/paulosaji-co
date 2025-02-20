@@ -1,0 +1,56 @@
+.section-light {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+  }
+  
+  .section-dark {
+    background-color: #e9ecef;
+    padding: 50px 0;
+  }
+  
+  .section-title {
+    color: #003366;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .section-text {
+    color: #666;
+  }
+  
+  .card-effect {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card-effect:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .team-card {
+    text-align: center;
+  }
+  
+  .team-image {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  .team-name {
+    color: #003366;
+    font-weight: bold;
+    margin-top: 15px;
+  }
+  
+  .team-title {
+    color: #666;
+  }
+  
+  .team-role {
+    color: #555;
+  }
+  
