@@ -30,7 +30,7 @@ h1,h2,h3,h4,h5,h6,
     /* font-family: "Roboto", sans-serif; */
     font-family: "Montserrat", sans-serif;
     font-size: 23px;
-    color: #D9EAFD;
+    color: rgb(106, 165, 233);
 }
 
 .header-p{
@@ -40,7 +40,7 @@ h1,h2,h3,h4,h5,h6,
     font-style: italic;
     font-weight: 600;
     font-size: 18px;
-    color: rgb(219, 237, 251);
+    color: #89CFF0;
 
 }
 .header-btn{
@@ -136,6 +136,7 @@ marquee{
     z-index: 9999;
     
 }
+
 
 .nav-bar.sticky-top {
     position: sticky;
@@ -256,8 +257,21 @@ marquee{
     align-items: center;
     justify-content: center;
     position: relative;
+    background-size: cover;
    
 }
+.slide .content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    padding: 1rem;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
 
 @media (max-width: 991.98px) {
     .slide video {
@@ -495,6 +509,13 @@ marquee{
     width: 100%;
     border-radius: 20px;
 }
+#about p{
+    font-size: 1.2rem;
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #3B3C36;
+}   
 .info-box p{
     color: #000000;
     font-weight: 600;
@@ -620,12 +641,21 @@ marquee{
 
 #team img {
  
-  height: 350px;
+  height: 380px;
   max-width: 100%; 
   border-radius: 10px;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
-
+/* #team img {
+    width: 100%;
+    height: auto;
+    max-height: 350px;
+    aspect-ratio: 3 / 4; 
+    object-fit: cover; 
+    object-position: top;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+} */
 #team img:hover {
   transform: scale(1.05);
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
@@ -800,7 +830,7 @@ marquee{
     border-radius: 8px;
 }
   
-#services p {
+/* #services p {
     font-size: 20px;
     font-weight: bold;
     font-family: "Poppins", sans-serif;
@@ -835,7 +865,44 @@ marquee{
     font-family: "Poppins", sans-serif;
     color: #002244;
     margin-bottom: 15px;
-}
+} */
+.service {
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    text-align: left;
+  }
+  
+  .service h5 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #003366;
+  }
+  
+  .service p {
+    font-size: 18px;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    line-height: 1.7;
+    color: #444;
+    margin-top: 10px;
+  }
+  
+  .core-values {
+    padding-left: 20px;
+    list-style-type: disc;
+  }
+  
+  .core-values li {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    color: #444;
+    line-height: 1.6;
+  }
+  
   
 .card-effect {
     /* background: #fff; */
@@ -855,6 +922,11 @@ marquee{
   .card-effect::after{
       color: #fff;
 }
+#services .core-values li::after{
+    color: #fff;
+
+}
+
 
 #services2 p{
     font-weight: 500;
@@ -870,41 +942,82 @@ marquee{
 
 /* VALUATION SECTION  */
 
-#valuation h5 {
-    font-size: 22px;
-    font-weight: 700;
-    color: #003366;
-    line-height: 1.5;
-  }
+.info-box { 
+    background: #fff; 
+    border: 2px solid #ddd; 
+    border-radius: 10px; 
+    padding: 30px; 
+}
+  .services-title { 
+      font-weight: 700; 
+      color: #0E46A3; 
+      font-size: 20px; 
+    }
+  .valuation-list li { 
+      font-size: 18px; 
+      font-weight: 600; 
+      margin-bottom: 8px; 
+      list-style-type: square;
+      text-align: start;
+    }
+  .btn-primary { 
+      background-color: #0E46A3; 
+      padding: 12px 30px; 
+      border-radius: 8px; 
+    }
+  .btn-primary:hover { background-color: #003366; }
   
-  #valuation ul {
-    list-style-type: disc;
-    padding-left: 20px;
-  }
+  /* .facility__container, .banner { 
+      display: grid; 
+      grid-template-columns: 1fr 1fr; 
+      gap: 20px; 
+      align-items: center; 
+    }
+  .facility__content, .banner__content { 
+      padding: 40px; 
+      background: linear-gradient(284deg, #55636E 6%, #2185D5 100%); 
+      color: #fff; 
+      border-radius: 8px; 
+    }
+  .facility__content h2, .banner__content h2 { font-size: 2.5rem; }
+  .facility__content p, .banner__content p { font-size: 1.2rem; }
   
-  #valuation ul li {
-    font-size: 18px;
-    font-weight: 600;
-    font-family: 'Courier New', Courier, monospace;
-    color: #000000;
-    margin-bottom: 8px;
-  }
   
-  #valuation .btn-primary {
-    background-color: #0E46A3;
-    border: none;
-    padding: 12px 30px;
-    font-size: 16px;
-    font-weight: 700;
-    border-radius: 8px;
-    transition: all 0.3s ease;
-  }
   
-  #valuation .btn-primary:hover {
-    background-color: #003366;
-    color: #fff;
-  }
+  @media (max-width: 768px) {
+    .facility__container, .banner { grid-template-columns: 1fr; }
+    .facility__content, .banner__content { text-align: center; }
+    .facility__content h2, .banner__content h2 { font-size: 2rem; }
+    .btn-primary { width: 100%; }
+  } */
 
+  .scrolling-text {
+    width: 100%;
+    /* background-color: #ccc; */
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+  }
+  
+ #services .scrolling-text p {
+    display: inline-block;
+    padding-left: 100%;
+    animation: scroll-left 15s linear infinite;
+    font-size: 25px;
+    font-weight: 500;
+    font-style: oblique;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #003366;
+  }
+  
+  @keyframes scroll-left {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
   
 
 
@@ -1726,7 +1839,7 @@ input.form-control {
     z-index: -1;
 }
 .hero3{
-    background-image: url(../img/real-val.jpg);
+    background-image: url(../img/value.jpg);
     background-position: bottom;
     background-size: cover;
     background-attachment: fixed;
@@ -1784,7 +1897,7 @@ input.form-control {
 }
 .hero6{
     /* background-image: url(../img/gov.webp); */
-    background-image: url(../img/government-adv.jpg);
+    background-image: url(../img/National-Assembly-Building-Abuja-800x445.jpg);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -1824,7 +1937,7 @@ input.form-control {
 }
 .hero8{
     /* background-image: url(../img/gov.webp); */
-    background-image: url(../img/contact-uspic.png);
+    background-image: url(../img/poc2.jpg);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -1868,7 +1981,7 @@ input.form-control {
     min-height: 500px;
 }
 .col-img4 {
-    background-image: url(../img/gov.webp);
+    background-image: url(../img/national-assembly-e1655380955715.webp);
     background-position: center;
     background-size: cover;
     min-height: 500px;

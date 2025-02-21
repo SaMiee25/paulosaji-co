@@ -32,54 +32,50 @@
     
 </head>
 <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="70">
-    <div class="container-fluid nav-bar bg-transparent">
-        <nav class="navbar navbar-expand-lg bg-secondary navbar-light py-0 px-4">
-            <a href="index.html" class="navbar-brand d-flex align-items-center text-center">
-                <div class="icon p-2 me-2">
-                    <img class="img-fluid" src="img/poc-logo-removebg-preview.png" alt="Icon" style="width: 100px; height: 70px;">
-                </div>
-                
+    <nav class="navbar navbar-expand-lg navbar-light bg-secondary py-0 px-4 fixed-top shadow-sm ">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="img/poc-logo-removebg-preview.png" alt="PAUL OSAJI & CO Logo" class="img-fluid" style="width: 100px; height: 70px;">
             </a>
-            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
-                <div class="navbar-nav ms-auto">
-                    <a href="index.html" class="nav-item nav-link active ">Home</a>
-                    <div class="nav-item dropdown">
-                        <a href="about.html" class="nav-link dropdown-toggle " >About</a>
-                        <div class="dropdown-menu rounded-0 m-0">
-                            <a href="about.html" class="dropdown-item">About Us</a>
-                            <a href="about.html" class="dropdown-item" data-bs-target="#partners">Our Team</a>
-                        </div>
-                    </div>
-                    <div class="nav-item dropdown">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a href="about.html" class="nav-link dropdown-toggle" >About</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="about.html" class="dropdown-item">About Us</a></li>
+                            <li><a href="about.html#partners" class="dropdown-item">Our Team</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
                         <a href="services.html" class="nav-link dropdown-toggle" >Services</a>
-                        <div class="dropdown-menu rounded-0 m-0">
-                            <a href="valuation.html" class="dropdown-item">Valuation</a>
-                            <a href="real-estate.html" class="dropdown-item"> Project Development</a>
-                            <a href="propertybrokerage.html" class="dropdown-item">Property Brokerage & Auctioneering</a>
-                            <a href="propertyfacilities.html" class="dropdown-item">Property Facilities & Management</a>
-                            <a href="governmentadv.html" class="dropdown-item">Government Advisory & Research Services</a>
-                        </div>
-                    </div>
-                    
-                    <a href="projects.html" class="nav-item nav-link ">Projects</a>
-                    <a href="clients.html" class="nav-item nav-link">Clients</a>
-                </div>
-                <a href="contact.html" class="btn btn-primary px-3 d-none d-lg-flex">Contact us</a>
-                
+                        <ul class="dropdown-menu">
+                            <li><a href="valuation.html" class="dropdown-item">Valuation</a></li>
+                            <li><a href="real-estate.html" class="dropdown-item">Project Development</a></li>
+                            <li><a href="propertybrokerage.html" class="dropdown-item">Property Brokerage & Auctioneering</a></li>
+                            <li><a href="propertyfacilities.html" class="dropdown-item">Property Facilities & Management</a></li>
+                            <li><a href="governmentadv.html" class="dropdown-item">Government Advisory & Research</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a href="projects.html" class="nav-link">Projects</a></li>
+                    <li class="nav-item"><a href="clients.html" class="nav-link">Clients</a></li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="btn btn-primary ms-lg-3">Contact Us</a>
+                    </li>
+                </ul>
             </div>
-        </nav>
-    </div>
-
+        </div>
+    </nav>
 
     <div class="hero hero8 vh-100 d-flex align-items-center" id="home">
         <div class="container">
             <div class="row">
-                <!-- <div class="col-lg-7 mx-auto text-center">
+                <div class="col-lg-7 mx-auto text-center">
                     <h1 class="display-2 text-white">Contact Us</h1>
-                </div> -->
+                </div>
             </div>
         </div>
     </div>
@@ -314,7 +310,7 @@
                     </li>
                     <li>
                         <i class="fa-solid fa-phone"></i>
-                        <p>Paul - 08034082576 |
+                        <p>
                             Precious - 08079792012</p>
                     </li>
                     <li>

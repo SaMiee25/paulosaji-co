@@ -28,47 +28,43 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="70">
-    <div class="container-fluid nav-bar bg-transparent">
-        <nav class="navbar navbar-expand-lg bg-secondary navbar-light py-0 px-4">
-            <a href="index.html" class="navbar-brand d-flex align-items-center text-center">
-                <div class="icon p-2 me-2">
-                    <img class="img-fluid" src="img/poc-logo-removebg-preview.png" alt="Icon" style="width: 100px; height: 70px;">
-                </div>
-                
+    <nav class="navbar navbar-expand-lg navbar-light bg-secondary py-0 px-4 fixed-top shadow-sm ">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="img/poc-logo-removebg-preview.png" alt="PAUL OSAJI & CO Logo" class="img-fluid" style="width: 100px; height: 70px;">
             </a>
-            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
-                <div class="navbar-nav ms-auto">
-                    <a href="index.html" class="nav-item nav-link active ">Home</a>
-                    <div class="nav-item dropdown">
-                        <a href="about.html" class="nav-link dropdown-toggle " >About</a>
-                        <div class="dropdown-menu rounded-0 m-0">
-                            <a href="about.html" class="dropdown-item">About Us</a>
-                            <a href="about.html" class="dropdown-item" data-bs-target="#partners">Our Team</a>
-                        </div>
-                    </div>
-                    <div class="nav-item dropdown">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a href="about.html" class="nav-link dropdown-toggle" >About</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="about.html" class="dropdown-item">About Us</a></li>
+                            <li><a href="about.html#partners" class="dropdown-item">Our Team</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
                         <a href="services.html" class="nav-link dropdown-toggle" >Services</a>
-                        <div class="dropdown-menu rounded-0 m-0">
-                            <a href="valuation.html" class="dropdown-item">Valuation</a>
-                            <a href="real-estate.html" class="dropdown-item"> Project Development</a>
-                            <a href="propertybrokerage.html" class="dropdown-item">Property Brokerage & Auctioneering</a>
-                            <a href="propertyfacilities.html" class="dropdown-item">Property Facilities & Management</a>
-                            <a href="governmentadv.html" class="dropdown-item">Government Advisory Services</a>
-                        </div>
-                    </div>
-                    
-                    <a href="projects.html" class="nav-item nav-link ">Projects</a>
-                    <a href="clients.html" class="nav-item nav-link">Clients</a>
-                </div>
-                <a href="contact.html" class="btn btn-primary px-3 d-none d-lg-flex">Contact us</a>
-                
+                        <ul class="dropdown-menu">
+                            <li><a href="valuation.html" class="dropdown-item">Valuation</a></li>
+                            <li><a href="real-estate.html" class="dropdown-item">Project Development</a></li>
+                            <li><a href="propertybrokerage.html" class="dropdown-item">Property Brokerage & Auctioneering</a></li>
+                            <li><a href="propertyfacilities.html" class="dropdown-item">Property Facilities & Management</a></li>
+                            <li><a href="governmentadv.html" class="dropdown-item">Government Advisory & Research</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a href="projects.html" class="nav-link">Projects</a></li>
+                    <li class="nav-item"><a href="clients.html" class="nav-link">Clients</a></li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="btn btn-primary ms-lg-3">Contact Us</a>
+                    </li>
+                </ul>
             </div>
-        </nav>
-    </div>
-
+        </div>
+    </nav>
 
     <div class="container-fluid header bg-white p-0">
         <div class="row g-0 align-items-center flex-column-reverse flex-md-row">
@@ -119,7 +115,7 @@
             <div class="overlay"></div>
             <img src="img/pwc.png" alt="">
             <div class="content">
-                <h2>PWC</h2>
+                <h2>Price Waterhouse Coopers</h2>
 
             </div>
         </div>
@@ -231,6 +227,161 @@
         </div>
     </div>
 
+
+<style>
+    .partnerships-section {
+      padding: 50px 20px;
+      background-color: #ffffff;
+      text-align: center;
+    }
+
+    .partnerships-section h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .partnerships-section ul {
+      list-style-type: none;
+      padding: 0;
+      text-align: left;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .partnerships-section li {
+      padding: 8px 0;
+      font-size: 1rem;
+      border-bottom: 1px solid #e0e0e0;
+    }
+
+    .projects-slider {
+      padding: 40px 0;
+      background-color: #f1f1f1;
+    }
+
+    .project {
+      position: relative;
+      padding: 10px;
+      outline: none;
+    }
+
+    .project img {
+      width: 100%;
+      height: 150px;
+      object-fit: contain;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      background-color: #fff;
+    }
+
+    .project-title {
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: rgba(0, 0, 0, 0.6);
+      color: #fff;
+      padding: 6px 10px;
+      border-radius: 6px;
+      font-size: 0.85rem;
+      width: 90%;
+      text-align: center;
+    }
+    .content h2{
+        color: black;
+    }
+
+    @media (max-width: 768px) {
+      .header-text h1 {
+        font-size: 2rem;
+      }
+
+      .header-image img {
+        max-width: 80%;
+      }
+
+      .project img {
+        height: 120px;
+      }
+
+      .project-title {
+        font-size: 0.8rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .project img {
+        height: 100px;
+      }
+    }
+  </style>
+<!-- </head>
+<body>
+  <header class="header-section">
+    <div class="header-content">
+      <div class="header-text">
+        <h1>Our Clients</h1>
+      </div>
+      <div class="header-image">
+        <img src="img/clients.jpg" alt="Clients">
+      </div>
+    </div>
+  </header>
+
+  <section id="partnerships" class="partnerships-section">
+    <h2>Partnerships & Affiliations</h2>
+    <ul>
+      <li>NIESV: Nigerian Institution of Estate Surveyors and Valuers</li>
+      <li>ESVARBON: Estate Surveyor and Valuers Registration Board of Nigeria</li>
+      <li>ASA: American Society of Appraisers</li>
+      <li>Daiwa Real Estate Appraisal Co. Ltd, Tokyo, Japan</li>
+      <li>RHAS Sydney Australia (An Operating Division of AON)</li>
+    </ul>
+  </section>
+
+  <section id="projects" class="projects-slider">
+    <div class="slider">
+      <div class="project"><img src="img/mobil.jpeg" alt="Mobile"><div class="project-title">MOBILE</div></div>
+      <div class="project"><img src="img/firstbank.jpeg" alt="First Bank"><div class="project-title">FIRST BANK</div></div>
+      <div class="project"><img src="img/pwc.png" alt="PWC"><div class="project-title">PWC</div></div>
+      <div class="project"><img src="img/gtbank.jpeg" alt="GTBank"><div class="project-title">GUARANTEE TRUST BANK</div></div>
+      <div class="project"><img src="img/stanbic.jpeg" alt="Stanbic IBTC"><div class="project-title">STANBIC IBTC</div></div>
+      <div class="project"><img src="img/lafarge.jpeg" alt="Larfarge"><div class="project-title">LARFARGE</div></div>
+      <div class="project"><img src="img/ndic.png" alt="NDIC"><div class="project-title">NIGERIA DEPOSIT INSURANCE COMPANY</div></div>
+      <div class="project"><img src="img/AMCON(9).png" alt="AMCON"><div class="project-title">ASSET MANAGEMENT CORPORATION OF NIGERIA</div></div>
+      <div class="project"><img src="img/bop.jpg" alt="Bureau of Public Enterprises"><div class="project-title">BUREAU OF PUBLIC ENTERPRISES</div></div>
+      <div class="project"><img src="img/fcmb.png" alt="FCMB"><div class="project-title">FCMB</div></div>
+      <div class="project"><img src="img/polaris.png" alt="Polaris Bank"><div class="project-title">POLARIS BANK</div></div>
+      <div class="project"><img src="img/mtn.jpeg" alt="MTN"><div class="project-title">MTN</div></div>
+      <div class="project"><img src="img/unilever.jpeg" alt="Unilever"><div class="project-title">UNILEVER</div></div>
+      <div class="project"><img src="img/fidelitybank.png" alt="Fidelity Bank"><div class="project-title">FIDELITY BANK PLC</div></div>
+      <div class="project"><img src="img/dangote.png" alt="Dangote"><div class="project-title">DANGOTE</div></div>
+      <div class="project"><img src="img/midwestern.png" alt="Midwestern Oil & Gas"><div class="project-title">MIDWESTERN OIL & GAS COMPANY LTD</div></div>
+      <div class="project"><img src="img/delta-state-government.jpg" alt="Delta State Government"><div class="project-title">DELTA STATE GOVERNMENT</div></div>
+      <div class="project"><img src="img/Abbey-Mortgage-Bank.jpg" alt="Abbey Mortgage Bank"><div class="project-title">ABBEY MORTGAGE BANK</div></div>
+    </div>
+  </section> -->
+
+  <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script> -->
+  <script>
+    $(document).ready(function() {
+      $('.slider').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2500,
+        arrows: true,
+        dots: true,
+        responsive: [
+          { breakpoint: 1024, settings: { slidesToShow: 3 } },
+          { breakpoint: 768, settings: { slidesToShow: 2 } },
+          { breakpoint: 480, settings: { slidesToShow: 1 } }
+        ]
+      });
+    });
+  </script>
+
     
 
     <div class="container-xxl py-5">
@@ -255,65 +406,47 @@
         </div>
     </div>
 
-    <div class="container-fluid bg-dark text-white-50 footer  wow fadeIn" data-wow-delay="0.1s">
-        <div class="container py-5">
-            <div class="row g-5">
-                <div class="col-lg-3 col-md-6">
-                    <h5 class="text-white mb-4">Get In Touch</h5>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Plot 16, 88 Chris Efuyemi Onanuga St,
-                        Lekki Phase 1, Lekki 106104, Lagos Nigeria</p>
-                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>Kevin - 08033054883
-                        </p>
-                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>Angela – 08023103579
-                        </p>
-                        
-                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@paulosajiandco-ng.com</p>
-                    <div class="d-flex pt-2">
-                        <a class="btn btn-outline-light btn-social" href="https://www.instagram.com/paulosaji_co/?hl=en"><i class="fab fa-instagram"></i></a>
-                        <a class="btn btn-outline-light btn-social" href="https://www.facebook.com/PaulOsajiandCoNig"><i class="fab fa-facebook-f"></i></a>
-
-                        <a class="btn btn-outline-light btn-social" href="https://ng.linkedin.com/company/paul-osaji-co"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h5 class="text-white">QUICK LINKS</h5>
-                        <ul class="list-unstyled">
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="services.html">Services</a></li>
-                            <li><a href="projects.html">Projects</a></li>
-                            <li><a href="clients.html">Clients</a></li>
-                            <li><a href="contact.html">Contact US</a></li>
-                        </ul>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h5 class="text-white">SERVICES</h5>
-                        <ul class="list-unstyled">
-                            <li><a href="valuation.html">Valuation</a></li>
-                            <li><a href="real-estate.html">Project Development</a></li>
-                            <li><a href="propertybrokerage.html">Property Brokerage/Auctioneering</a></li>
-                            <li><a href="propertyfacilities.html">Property & Facilities Management</a></li>
-                            <li><a href="governmentadv.html">Government Advisory Services & Research </a></li>
-                            
-                        </ul>
-                </div>
+    <section class="footer bg-dark text-white-50 py-5">
+        <div class="container">
+          <div class="row g-5">
+            <div class="col-lg-4 col-md-6">
+              <h5 class="text-white mb-4">Get In Touch</h5>
+              <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Plot 16, 88 Chris Efuyemi Onanuga St, Lekki Phase 1, Lekki 106104, Lagos Nigeria</p>
+              <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>Kevin - 08033054883</p>
+              <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>Angela - 08023103579</p>
+              <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@paulosajiandco-ng.com</p>
+              <div class="d-flex pt-3">
+                <a class="btn btn-outline-light btn-social me-2" href="https://www.instagram.com/paulosaji_co/?hl=en"><i class="fab fa-instagram"></i></a>
+                <a class="btn btn-outline-light btn-social me-2" href="https://www.facebook.com/PaulOsajiandCoNig"><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-outline-light btn-social" href="https://ng.linkedin.com/company/paul-osaji-co"><i class="fab fa-linkedin-in"></i></a>
+              </div>
             </div>
+      
+            <div class="col-lg-4 col-md-6">
+              <h5 class="text-white mb-4">Quick Links</h5>
+              <ul class="list-unstyled">
+                <li><a class="text-white-50" href="index.html"><i class="fa fa-angle-right me-2"></i>Home</a></li>
+                <li><a class="text-white-50" href="about.html"><i class="fa fa-angle-right me-2"></i>About</a></li>
+                <li><a class="text-white-50" href="services.html"><i class="fa fa-angle-right me-2"></i>Services</a></li>
+                <li><a class="text-white-50" href="projects.html"><i class="fa fa-angle-right me-2"></i>Projects</a></li>
+                <li><a class="text-white-50" href="clients.html"><i class="fa fa-angle-right me-2"></i>Clients</a></li>
+                <li><a class="text-white-50" href="contact.html"><i class="fa fa-angle-right me-2"></i>Contact Us</a></li>
+              </ul>
+            </div>
+      
+            <div class="col-lg-4 col-md-6">
+              <h5 class="text-white mb-4">Our Services</h5>
+              <ul class="list-unstyled">
+                <li><a class="text-white-50" href="valuation.html"><i class="fa fa-angle-right me-2"></i>Valuation</a></li>
+                <li><a class="text-white-50" href="real-estate.html"><i class="fa fa-angle-right me-2"></i>Project Development</a></li>
+                <li><a class="text-white-50" href="propertybrokerage.html"><i class="fa fa-angle-right me-2"></i>Property Brokerage/Auctioneering</a></li>
+                <li><a class="text-white-50" href="propertyfacilities.html"><i class="fa fa-angle-right me-2"></i>Property & Facilities Management</a></li>
+                <li><a class="text-white-50" href="governmentadv.html"><i class="fa fa-angle-right me-2"></i>Government Advisory & Research Services</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <!-- <div class="container">
-            <div class="copyright">
-                <div class="row">
-                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a class="border-bottom" href="#">Your Site Name</a>, All Right Reserved. 
-                        
-                        
-                        
-                    </div>
-                    
-                </div>
-            </div>
-        </div> -->
-        <br>
-    </div>
+      </section>
 
 
     <script src="js/jquery.min.js"></script>

@@ -35,53 +35,51 @@
 <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="70">
    
     <!--NAV -->
-    <div class="container-fluid nav-bar bg-transparent">
-        <nav class="navbar navbar-expand-lg bg-secondary navbar-light py-0 px-4">
-            <a href="index.html" class="navbar-brand d-flex align-items-center text-center">
-                <div class="icon p-2 me-2">
-                    <img class="img-fluid" src="img/poc-logo-removebg-preview.png" alt="Icon" style="width: 100px; height: 70px;">
-                </div>
-                
-            </a>
-            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <div class="navbar-nav ms-auto">
-                    <a href="index.html" class="nav-item nav-link active ">Home</a>
-                    <div class="nav-item dropdown">
-                        <a href="about.html" class="nav-link dropdown-toggle " >About</a>
-                        <div class="dropdown-menu rounded-0 m-0">
-                            <a href="about.html" class="dropdown-item">About Us</a>
-                            <a href="about.html" class="dropdown-item" data-bs-target="#partners">Our Team</a>
-                        </div>
-                    </div>
-                    <div class="nav-item dropdown">
-                        <a href="services.html" class="nav-link dropdown-toggle" >Services</a>
-                        <div class="dropdown-menu rounded-0 m-0">
-                            <a href="valuation.html" class="dropdown-item">Valuation</a>
-                            <a href="real-estate.html" class="dropdown-item"> Project Development</a>
-                            <a href="propertybrokerage.html" class="dropdown-item">Property Brokerage & Auctioneering</a>
-                            <a href="propertyfacilities.html" class="dropdown-item">Property Facilities & Management</a>
-                            <a href="governmentadv.html" class="dropdown-item">Government Advisory & Research Services</a>
-                        </div>
-                    </div>
-                    
-                    <a href="projects.html" class="nav-item nav-link ">Projects</a>
-                    <a href="clients.html" class="nav-item nav-link">Clients</a>
-                </div>
-                <a href="contact.html" class="btn btn-primary px-3 d-none d-lg-flex">Contact us</a>
-                
-            </div>
-        </nav>
-    </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-secondary py-0 px-4 fixed-top shadow-sm ">
+      <div class="container-fluid">
+          <a class="navbar-brand d-flex align-items-center" href="index.html">
+              <img src="img/poc-logo-removebg-preview.png" alt="PAUL OSAJI & CO Logo" class="img-fluid" style="width: 100px; height: 70px;">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+              <ul class="navbar-nav ms-auto align-items-center">
+                  <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
+                  <li class="nav-item dropdown">
+                      <a href="about.html" class="nav-link dropdown-toggle" >About</a>
+                      <ul class="dropdown-menu">
+                          <li><a href="about.html" class="dropdown-item">About Us</a></li>
+                          <li><a href="about.html#partners" class="dropdown-item">Our Team</a></li>
+                      </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                      <a href="services.html" class="nav-link dropdown-toggle" >Services</a>
+                      <ul class="dropdown-menu">
+                          <li><a href="valuation.html" class="dropdown-item">Valuation</a></li>
+                          <li><a href="real-estate.html" class="dropdown-item">Project Development</a></li>
+                          <li><a href="propertybrokerage.html" class="dropdown-item">Property Brokerage & Auctioneering</a></li>
+                          <li><a href="propertyfacilities.html" class="dropdown-item">Property Facilities & Management</a></li>
+                          <li><a href="governmentadv.html" class="dropdown-item">Government Advisory & Research</a></li>
+                      </ul>
+                  </li>
+                  <li class="nav-item"><a href="projects.html" class="nav-link">Projects</a></li>
+                  <li class="nav-item"><a href="clients.html" class="nav-link">Clients</a></li>
+                  <li class="nav-item">
+                      <a href="contact.html" class="btn btn-primary ms-lg-3">Contact Us</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+
 
         
     <!-- SLIDER -->
     <div class="owl-carousel owl-theme hero-slider">
         <div class="slide slide1">
             <div class="container">
-                <video autoplay muted loop>
+                <video autoplay muted loop playsinline>
                     <source src="img/poc.mp4" type="video/mp4" width="100%">
                   </video>
                 <div class="row">
@@ -111,50 +109,23 @@
                 </div>
             </div>
         </div> -->
-        <!-- <div class="slide slide3">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 col-lg-10 offset-lg-1 text-white">
-                        <h6 class=" text-uppercase">Find your dream home at   </h6>
-                        <h1 class="display-3 my-4">PAUL <br />OSAJI & CO</h1>
-                        <h6 class="text-white text-uppercase">A WORLD-CLASS REAL ESTATE  </h6>
-                        <p class="header-p">We are your gateway to a wealthier Life…</p>
-                        <a href="contact.html" class="btn btn-primary header-btn">TALK TO US</a>
-                        <a href="#" class="btn btn-outline-light ms-3">Our work</a>
-                        <a href="contact.html" class="btn btn-outline-primary ms-3 header-btn">VISIT US FOR MORE INFORMATION</a>
-                    </div>
-                </div>
-            </div>
-        </div> -->
     </div>
 
 
     <!-- ABOUT -->
-    <section id="about" data-aos="zoom-in-down">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-5 py-5">
-                    <div class="row">
+    <section id="about" class="py-5" data-aos="zoom-in-down">
+      <div class="container">
+          <div class="row align-items-center">
+              <div class="col-lg-6">
+                  <img src="img/poc.gif" alt="About Us" class="img-fluid rounded shadow-sm">
+              </div>
+              <div class="col-lg-6 mt-4 mt-lg-0">
+                  <p>Established in 1997, <strong>Paul Osaji & Co</strong> is a premier firm of Estate Surveyors and Valuers headquartered in Lekki Phase 1, Lagos, with branches in Ikeja, Asaba, and Abuja. Registered with the Estate Surveyors and Valuers Registration Board of Nigeria (CAP E13 LFN 2007), we provide exceptional real estate consultancy services tailored to create value for stakeholders. Our integrated solutions, backed by market insights, ensure clients receive top-tier professional services.</p>
+              </div>
+          </div>
+      </div>
+  </section>
 
-                        <div class="col-12">
-                            <div class="info-box">
-                                <div class="ms-4">
-                                    <p>As a premier firm of Estate Surveyors and Valuers, PAUL OSAJI & CO has been delivering exceptional real estate consultancy services since 1997. <br>
-                                        Headquartered in Lekki Phase 1, Lagos, with branches in Ikeja, Asaba, and Abuja. <br>
-                                     Registered with the Estate Surveyors and Valuers Registration Board of Nigeria (CAP E 13LFN 2007). <br><br>
-                                      We deliver top-notch real estate consultancy services, driven by our commitment to creating value for our stakeholders.
-                                        Our expert team provides integrated services, backed by in-depth market knowledge and foresight, ensuring tailored solutions for our clients.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-5">
-                    <img src="img/poc.gif" alt="">
-                </div>
-            </div>
-        </div>
-    </section>
 
     <section id="portfolio" class="bg-light py-5">
         <div class="container">
@@ -184,7 +155,7 @@
             </div>
           </div>
           <div class="project position-relative">
-            <img src="img/pro-auc.jpg" alt="Property Brokerage/Auctioneering" class="img-fluid rounded">
+            <img src="img/auct.jpg" alt="Property Brokerage/Auctioneering" class="img-fluid rounded">
             <div class="overlay position-absolute w-100 h-100 d-flex align-items-center justify-content-center">
               <div class="content text-center text-white">
                 <h2>PROPERTY BROKERAGE/AUCTIONEERING</h2>
@@ -202,7 +173,7 @@
             </div>
           </div>
           <div class="project position-relative">
-            <img src="img/National-Assembly-Building-Abuja-800x445.jpg" alt="Government Advisory & Research Services" class="img-fluid rounded">
+            <img src="img/national-assembly-e1655380955715.webp" alt="Government Advisory & Research Services" class="img-fluid rounded">
             <div class="overlay position-absolute w-100 h-100 d-flex align-items-center justify-content-center">
               <div class="content text-center text-white">
                 <h2>GOVERNMENT ADVISORY & RESEARCH SERVICES</h2>
@@ -334,7 +305,7 @@
             <div class="col-lg-4 col-md-6" data-aos="zoom-out-up">
               <div class="team-member position-relative overflow-hidden bg-white rounded shadow-sm">
                 <div class="image">
-                  <img src="img/team_2.jpg" alt="Ofili Kevin Chiedu" class="img-fluid w-100 rounded-top">
+                  <img src="img/rep-ko.jpg" alt="Ofili Kevin Chiedu" class="img-fluid w-100 rounded-top">
                   <div class="overlay position-absolute w-100 h-100 top-0 start-0 d-flex align-items-center justify-content-center">
                     <div class="social-icons d-flex">
                       <a href="#" class="text-white me-3"><i class='bx bxl-facebook'></i></a>
@@ -583,7 +554,7 @@
                                     </div>
                                     <div class="col-lg-6">
                                         <label for="userName" class="form-label">First Name</label>
-                                        <input type="text" class="form-control" placeholder="First Name" id="userName" name="name" required aria-describedby="emailHelp">
+                                        <input type="text" class="form-control" placeholder="First Name" id="userName" name="FirstName" required aria-describedby="emailHelp">
                                     </div>
                                     <div class="col-lg-6">
                                         <label for="userName" class="form-label">Last Name</label>

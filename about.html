@@ -29,46 +29,43 @@
 </head>
 <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="70">
     
-    <div class="container-fluid nav-bar bg-transparent">
-        <nav class="navbar navbar-expand-lg bg-secondary navbar-light py-0 px-4">
-            <a href="index.html" class="navbar-brand d-flex align-items-center text-center">
-                <div class="icon p-2 me-2">
-                    <img class="img-fluid" src="img/poc-logo-removebg-preview.png" alt="Icon" style="width: 100px; height: 70px;">
-                </div>
-                
-            </a>
-            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <div class="navbar-nav ms-auto">
-                    <a href="index.html" class="nav-item nav-link  ">Home</a>
-                    <div class="nav-item dropdown">
-                        <a href="about.html" class="nav-link dropdown-toggle " >About</a>
-                        <div class="dropdown-menu rounded-0 m-0">
-                            <a href="about.html" class="dropdown-item active">About Us</a>
-                            <a href="#partners" class="dropdown-item" data-bs-target="">Our Team</a>
-                        </div>
-                    </div>
-                    <div class="nav-item dropdown">
-                        <a href="services.html" class="nav-link dropdown-toggle" >Services</a>
-                        <div class="dropdown-menu rounded-0 m-0">
-                            <a href="valuation.html" class="dropdown-item">Valuation</a>
-                            <a href="real-estate.html" class="dropdown-item"> Project Development</a>
-                            <a href="propertybrokerage.html" class="dropdown-item">Property Brokerage & Auctioneering</a>
-                            <a href="propertyfacilities.html" class="dropdown-item">Property Facilities & Management</a>
-                            <a href="governmentadv.html" class="dropdown-item">Government Advisory & Research Services</a>
-                        </div>
-                    </div>
-                    
-                    <a href="projects.html" class="nav-item nav-link ">Projects</a>
-                    <a href="clients.html" class="nav-item nav-link">Clients</a>
-                </div>
-                <a href="contact.html" class="btn btn-primary px-3 d-none d-lg-flex">Contact us</a>
-                
-            </div>
-        </nav>
+  <nav class="navbar navbar-expand-lg navbar-light bg-secondary py-0 px-4 fixed-top shadow-sm ">
+    <div class="container-fluid">
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+            <img src="img/poc-logo-removebg-preview.png" alt="PAUL OSAJI & CO Logo" class="img-fluid" style="width: 100px; height: 70px;">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav ms-auto align-items-center">
+                <li class="nav-item"><a href="index.html" class="nav-link ">Home</a></li>
+                <li class="nav-item dropdown">
+                    <a href="about.html" class="nav-link dropdown-toggle  active"  >About</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="about.html" class="dropdown-item">About Us</a></li>
+                        <li><a href="about.html#partners" class="dropdown-item">Our Team</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="services.html" class="nav-link dropdown-toggle" >Services</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="valuation.html" class="dropdown-item">Valuation</a></li>
+                        <li><a href="real-estate.html" class="dropdown-item">Project Development</a></li>
+                        <li><a href="propertybrokerage.html" class="dropdown-item">Property Brokerage & Auctioneering</a></li>
+                        <li><a href="propertyfacilities.html" class="dropdown-item">Property Facilities & Management</a></li>
+                        <li><a href="governmentadv.html" class="dropdown-item">Government Advisory & Research</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a href="projects.html" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="clients.html" class="nav-link">Clients</a></li>
+                <li class="nav-item">
+                    <a href="contact.html" class="btn btn-primary ms-lg-3">Contact Us</a>
+                </li>
+            </ul>
+        </div>
     </div>
+</nav>
 
     <!-- <div class="container-fluid header bg-white p-0">
         <div class="row g-0 align-items-center flex-column-reverse flex-md-row">
@@ -101,56 +98,53 @@
             <div class="row mb-5">
                 <div class="col-md-8 mx-auto text-center">
                     <h1 data-aos="zoom-in-up">Who We Are?</h1>
-                    <p data-aos="zoom-out-up">
+                    <p data-aos="zoom-out-up" style="font-size: 21px; font-weight: 500;">
                 
-                        PAUL OSAJI & CO is a leading real estate consultancy firm, providing exceptional services since 1997. With our headquarters in Lekki Phase 1, Lagos, and additional offices in Ikeja, Asaba, and Abuja, we offer comprehensive solutions nationwide.
+                        <strong>Paul Osaji & Co</strong> is a leading real estate consultancy firm, providing exceptional services since 1997. With our headquarters in Lekki Phase 1, Lagos, and additional offices in Ikeja, Asaba, and Abuja, we offer comprehensive solutions nationwide.
                         Registered with the Estate Surveyors and Valuers Registration Board of Nigeria (CAP E 13 LFN 2007).</p>
                 </div>
-                <marquee bgcolor="#ccc" loop="-1" scrollamount="10" width="100%">Right from inception, we have continously focused on building a world-class Real Estate consulting practice and we are not slowing down ever.</marquee>
+            </div>
+            <div class="scrolling-text">
+              <p>From day one, our unwavering focus has been building a world-class real estate consulting practice, and that ambition continues to drive us forward.</p>
             </div>
             <div class="row g-4">
-                <div class="col-lg-4 col-sm-6" data-aos="zoom-in-up">
-                    <div class="service card-effect bounceInUp">
-                        <!-- <div class="iconbox">
-                            <img src="img/dart-removebg-preview.png" alt="">
-                        </div> -->
-                        <h5 class="mt-4 mb-2">OUR MISSION</h5>
-                        <p>“To provide premium and innovative real estate consultancy
-                            services with the aim of giving our very best at all times to
-                            the benefit of all stakeholders and to be the industry
-                            First rate in Nigeria and beyond”
-                             </p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6" data-aos="zoom-in-up">
-                    <div class="service card-effect">
-                        <!-- <div class="iconbox">
-                            <img src="img/visionn-removebg-preview.png" alt="">
-                        </div> -->
-                        <h5 class="mt-4 mb-2">OUR VISION</h5>
-                        <p>“To build a team that consistently
-                            challenges itself to deliver limitless
-                            possibilities to our clients
-                            and to give them maximum
-                            value for their investment”</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6" data-aos="zoom-in-up">
-                    <div class="service card-effect">
-                        <!-- <div class="iconbox">
-                            <img src="img/core-val-removebg-preview.png" alt="">
-                        </div> -->
-                        <h5 class="mt-6 mb-2">CORE VALUES</h5>
-                        <p class="core"> > Seek to establish a culture that will foster dynamism, high ethical standards,
-                            professionalism and teamwork. <br>
-                            > Making performance a daily commitment. <br>
-                            > Achieve differentiation from competitors by developing an uncompromising
-                            committment to superior quality in all aspects of our services. <br>
-                            > Seek to understand and show responsiveness to the needs of our clients and
-                            ensure their satisfaction </p>
-                    </div>
-                </div>
-            </div>
+  <!-- Mission -->
+  <div class="col-lg-4 col-sm-6" data-aos="zoom-in-up">
+    <div class="service card-effect bounceInUp">
+      <h5 class="mt-4 mb-3">OUR MISSION</h5>
+      <p>
+        "To provide premium and innovative real estate consultancy services, 
+        delivering our very best at all times for the benefit of all stakeholders 
+        and striving to be the industry’s first-rate in Nigeria and beyond."
+      </p>
+    </div>
+  </div>
+
+  <!-- Vision -->
+  <div class="col-lg-4 col-sm-6" data-aos="zoom-in-up">
+    <div class="service card-effect">
+      <h5 class="mt-4 mb-3">OUR VISION</h5>
+      <p>
+        "To build a team that consistently challenges itself to deliver limitless possibilities 
+        to our clients, providing them with maximum value for their investments."
+      </p>
+    </div>
+  </div>
+
+  <!-- Core Values -->
+  <div class="col-lg-4 col-sm-6" data-aos="zoom-in-up">
+    <div class="service card-effect">
+      <h5 class="mt-4 mb-3">CORE VALUES</h5>
+      <ul class="core-values">
+        <li>Fostering a culture of dynamism, high ethical standards, professionalism, and teamwork.</li>
+        <li>Making performance a daily commitment.</li>
+        <li>Achieving differentiation through an uncompromising commitment to superior quality in all services.</li>
+        <li>Understanding and responding to the needs of our clients to ensure their satisfaction.</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
         </div>
     </section>
 
@@ -193,7 +187,7 @@
             <div class="col-lg-4 col-md-6" data-aos="zoom-out-left">
               <div class="card border-0 shadow-sm h-100">
                 <div class="card-img-top position-relative overflow-hidden">
-                  <img src="img/team_2.jpg" class="img-fluid rounded-top" alt="Ofili Kevin Chiedu">
+                  <img src="img/rep-ko.jpg" class="img-fluid rounded-top" alt="Ofili Kevin Chiedu">
                 </div>
                 <div class="card-body">
                   <h5 class="card-title" style="color: #003366;">OFILI KEVIN CHIEDU</h5>
@@ -264,80 +258,71 @@
                         MANAGEMENT TEAM</h1>
                 </div>
             </div>
-            <div class="row text-center g-4" >
-                <div class="col-lg-4 col-sm-6" data-aos="zoom-in-up">
-                    <div class="team-member card-effect">
-                        
-                        <img src="img/madam-osaji.jpg" alt="">
-                            
-                            <h5 class="fw-bold mb-0">MARY U. OSAJI</h5>
-                            <small>B.A English 
-                            </small>
-                            <p>Head, Adminstration</p>
-                    </div>
+            <div class="row text-center g-4">
+              <div class="col-lg-4 col-sm-6" data-aos="zoom-in-up">
+                <div class="team-member card-effect">
+                  <img src="img/madam-osaji.jpg" alt="MARY U. OSAJI" />
+                  <h5 class="fw-bold mb-0">MARY U. OSAJI</h5>
+                  <small>B.A English</small>
+                  <p>Head, Administration</p>
                 </div>
-                <div class="col-lg-4 col-sm-6" data-aos="zoom-in-up">
-                    <div class="team-member      card-effect">
-                        <img src="img/madamIfy.jpg" alt="">
-                            <h5 class="fw-bold mb-0">IFEYINWA ONWUATUOGWU</h5>
-                            <small>ANIVS, RSV</small>
-                            <p>Head, New Projects Marketing</p>
-                        
-                    </div>
+              </div>
+              <div class="col-lg-4 col-sm-6" data-aos="zoom-in-up">
+                <div class="team-member card-effect">
+                  <img src="img/madamIfy.jpg" alt="IFEYINWA ONWUATUOGWU" />
+                  <h5 class="fw-bold mb-0">IFEYINWA ONWUATUOGWU</h5>
+                  <small>ANIVS, RSV</small>
+                  <p>Head, New Projects Marketing</p>
                 </div>
-                <div class="col-lg-4 col-sm-6" data-aos="zoom-in-up">
-                    <div class="team-member      card-effect">
-                        <img src="img/Mr-kachi.jpeg" alt="">
-                        <h5 class="fw-bold mb-0">ONYEDIKACHI NDOLO</h5>
-                        <small>ANIVS, RSV</small>
-                        <p>Head, New Projects Marketing</p>
-                    </div>
+              </div>
+              <div class="col-lg-4 col-sm-6" data-aos="zoom-in-up">
+                <div class="team-member card-effect">
+                  <img src="img/Mr-kachi.jpeg" alt="ONYEDIKACHI NDOLO" />
+                  <h5 class="fw-bold mb-0">ONYEDIKACHI NDOLO</h5>
+                  <small>ANIVS, RSV</small>
+                  <p>Head, New Projects Marketing</p>
                 </div>
-                <div class="col-lg-4 col-sm-6" data-aos="zoom-in-down">
-                    <div class="team-member      card-effect">
-                        <img src="img/Mr-Dan.jpeg" alt="">
-                        <h5 class="fw-bold mb-0">DANIEL IKECHIUNOR</h5>
-                        <small>ANIVS, RSV</small>
-                        <p>Head, Valuation Services</p>
-                    </div>
+              </div>
+              <div class="col-lg-4 col-sm-6" data-aos="zoom-in-down">
+                <div class="team-member card-effect">
+                  <img src="img/Mr-Dan.jpeg" alt="DANIEL IKECHIUNOR" />
+                  <h5 class="fw-bold mb-0">DANIEL IKECHIUNOR</h5>
+                  <small>ANIVS, RSV</small>
+                  <p>Head, Valuation Services</p>
                 </div>
-                <div class="col-lg-4 col-sm-6" data-aos="zoom-in-down">
-                    <div class="team-member      card-effect">
-                        <img src="img/team_2.jpg" alt="">
-                        <h5 class="fw-bold mb-0">OFILI CHUKWUKA</h5>
-                        <small>MNSE, PMI, COREN</small>
-                        <p>Head, Property Development</p>
-                        
-                    </div>
+              </div>
+              <div class="col-lg-4 col-sm-6" data-aos="zoom-in-down">
+                <div class="team-member card-effect">
+                  <img src="img/rep-ko.jpg" alt="OFILI CHUKWUKA" />
+                  <h5 class="fw-bold mb-0">OFILI CHUKWUKA</h5>
+                  <small>MNSE, PMI, COREN</small>
+                  <p>Head, Property Development</p>
                 </div>
-                <div class="col-lg-4 col-sm-6" data-aos="zoom-in-down">
-                    <div class="team-member      card-effect">
-                        <img src="img/mr-king.jpg" alt="">
-                        <h5 class="fw-bold mb-0">KINGSLEY MADUAGWU</h5>
-                        <small>ANIVS,RSV</small>
-                        <p>Head, Business Development.</p>
-                        
-                    </div>
+              </div>
+              <div class="col-lg-4 col-sm-6" data-aos="zoom-in-down">
+                <div class="team-member card-effect">
+                  <img src="img/mr-king.jpg" alt="KINGSLEY MADUAGWU" />
+                  <h5 class="fw-bold mb-0">KINGSLEY MADUAGWU</h5>
+                  <small>ANIVS, RSV</small>
+                  <p>Head, Business Development</p>
                 </div>
-                <div class="col-lg-4 col-sm-6"data-aos="zoom-in-right">
-                    <div class="team-member      card-effect">
-                        <img src="img/AKPOS GBARIGOLO 1.jpg" alt="">
-                        <h5 class="fw-bold mb-0">AKPOS GBARIGOLO</h5>
-                        <small>ACIM, ANIM</small>
-                        <p>Head, Human Resources.</p>
-                        
-                    </div>
+              </div>
+              <div class="col-lg-4 col-sm-6" data-aos="zoom-in-right">
+                <div class="team-member card-effect">
+                  <img src="img/AKPOS GBARIGOLO 1.jpg" alt="AKPOS GBARIGOLO" />
+                  <h5 class="fw-bold mb-0">AKPOS GBARIGOLO</h5>
+                  <small>ACIM, ANIM</small>
+                  <p>Head, Human Resources</p>
                 </div>
-                <div class="col-lg-4 col-sm-6" data-aos="zoom-in-left">
-                    <div class="team-member      card-effect">
-                        <img src="img/madam-yomi.jpg" alt="">
-                        <h5 class="fw-bold mb-0">OLUWAYOMI OMOTARA</h5>
-                        <small>ACA</small>
-                        <p>Head, Finance/Accounts</p>
-                        
-                    </div>
+              </div>
+              <div class="col-lg-4 col-sm-6" data-aos="zoom-in-left">
+                <div class="team-member card-effect">
+                  <img src="img/madam-yomi.jpg" alt="OLUWAYOMI OMOTARA" />
+                  <h5 class="fw-bold mb-0">OLUWAYOMI OMOTARA</h5>
+                  <small>ACA</small>
+                  <p>Head, Finance/Accounts</p>
                 </div>
-               
+              </div>
             </div>
         </div>
     </section>
@@ -386,7 +371,7 @@
         <div class="container">
           <div class="text-center mx-auto mb-5" style="max-width: 800px;">
             <h1 class="mb-4" style="color: #003366; font-family: 'Poppins', sans-serif;">OUR TEAM OF PROFESSIONALS</h1>
-            <p style="color: #555; font-size: 16px; font-weight: 600; line-height: 1.8;">
+            <p style="color: #555; font-size: 18px; font-weight: 600; line-height: 1.8;">
               At Paul Osaji & Co, we take professionalism very seriously. Our recruitment policy is geared towards attracting highly qualified personnel. We create an environment conducive to continuous learning and ensure they are exposed to global training in both existing and emerging areas of competence. <br><br>
               Our Partners and Surveyors have vast experience spanning every sector of the real estate profession. Over the years, we have provided appraisal, valuation, and other real estate services to high-net-worth individuals and corporate organizations across Nigeria.
             </p>
@@ -470,7 +455,7 @@
               <textarea cols="30" rows="5" class="form-control" placeholder="Enter Message" required style="padding: 15px; border-radius: 8px; border: 1px solid #ccc;"></textarea>
             </div>
             <div class="col-md-10 d-grid">
-              <button class="btn btn-primary" style="padding: 15px; font-size: 16px; border-radius: 8px; background-color: #003366;">Schedule Appointment</button>
+              <button class="btn btn-primary" style="padding: 15px; font-size: 16px; border-radius: 8px; background-color: #003366;">Schedule  Appointment</button>
             </div>
           </form>
         </div>
