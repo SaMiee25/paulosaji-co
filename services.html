@@ -66,7 +66,116 @@
         </div>
     </nav>
 
-    <div class="owl-carousel owl-theme hero-slider">
+    <div id="professionalBannerSlider" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="banner-slide slide1 d-flex align-items-center text-white" style="background-image: url(img/sap-img/E-dev.JPG);">
+              <div class="container text-center">
+                <h1 class="display-4 fw-bold" style="color: rgba(165, 201, 223, 0.993)">Expert Real Estate Solutions</h1>
+                <p class="lead" style="color: rgb(253, 253, 253); ">Delivering tailored services that meet your unique needs.</p>
+                <a href="contact.html#contact" class="btn btn-primary px-4 py-2 mt-3">Talk to Us</a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="banner-slide d-flex align-items-center text-white" style="background-image: url(img/plant.JPG);">
+              <div class="container text-center">
+                <h1 class="display-4 fw-bold">With you all the way</h1>
+                <p class="lead" style="color: rgb(255, 255, 255); ">Guiding you every step of the way.</p>
+                <a href="contact.html#services" class="btn btn-outline-light px-4 py-2 mt-3">Learn More</a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="banner-slide d-flex align-items-center text-white" style="background-image: url(img/ship1.jpg);">
+              <div class="container text-center">
+                <h1 class="display-4 fw-bold" style="color: #3D0C02;">Turning Vision into Reality</h1>
+                <p class="lead" style="color: #F0FFFF;">Exceptional services that exceed expectations.</p>
+                <a href="contact.html#services" class="btn btn-outline-bold px-4 py-2 mt-3">Get Started</a>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      
+        <button class="carousel-control-prev" type="button" data-bs-target="#professionalBannerSlider" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#professionalBannerSlider" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#professionalBannerSlider" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#professionalBannerSlider" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#professionalBannerSlider" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+      </div>
+      
+      <style>
+      .banner-slide {
+        height: 800px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.7);
+      }
+      
+      .banner-slide h1 {
+        font-size: 4rem;
+        margin-bottom: 1rem;
+
+      }
+      
+      .banner-slide p {
+        font-size: 1.8rem;
+        margin-bottom: 1.5rem;
+        font-weight: 600;
+      }
+      
+      .carousel-control-prev-icon, .carousel-control-next-icon {
+        width: 3rem;
+        height: 3rem;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 50%;
+      }
+      
+      .carousel-indicators button {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        /* background-color: #fff; */
+        opacity: 0.7;
+    
+      }
+      
+      .carousel-indicators .active {
+        opacity: 1;
+        background-color: #007bff;
+      }
+      </style>
+      
+      <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          new bootstrap.Carousel('#professionalBannerSlider', {
+            interval: 2500,
+            ride: 'carousel',
+            pause: 'hover',
+            wrap: true // Ensures continuous looping
+          });
+        });
+        </script>
+      
+
+    
+
+
+    <!-- <div class="owl-carousel owl-theme hero-slider">
         <div class="slide slide2">
             <div class="container">
                 <div class="row">
@@ -75,7 +184,7 @@
                         <h1 class="display-3 my-4 ">OUR SERVICES</h1>
                         
                         <p class="header-p">Focused on delivering value-driven real estate solutions...</p>
-                        <a href="contact.html" class="btn btn-primary header-btn">TALK TO US</a>
+                        <a href="contact.html#contact" class="btn btn-primary header-btn">TALK TO US</a>
                         
                         
                     </div>
@@ -89,9 +198,9 @@
                         <h1 class="display-3 my-4">OUR SERVICES</h1>
                         
                         <p class="header-p">An unwavering commitment to your success.</p>
-                        <!-- <a href="contact.html" class="btn btn-primary header-btn">TALK TO US</a> -->
                         
-                        <a href="contact.html" class="btn btn-outline-primary ms-3 header-btn">VISIT US FOR MORE INFORMATION</a>
+                        
+                        <a href="contact.html#services" class="btn btn-outline-primary ms-3 header-btn">VISIT US FOR MORE INFORMATION</a>
                     </div>
                 </div>
             </div>
@@ -103,9 +212,9 @@
                         <h1 class="display-3 my-4">OUR SERVICES</h1>
                         
                         <p class="header-p">Our services span every step of the way.</p>
-                        <!-- <a href="contact.html" class="btn btn-primary header-btn">TALK TO US</a> -->
                         
-                        <a href="contact.html" class="btn btn-outline-primary ms-3 header-btn">VISIT US FOR MORE INFORMATION</a>
+                        
+                        <a href="contact.html#services" class="btn btn-outline-primary ms-3 header-btn">VISIT US FOR MORE INFORMATION</a>
                     </div>
                 </div>
             </div>
@@ -117,9 +226,9 @@
                         <h1 class="display-3 my-4">OUR SERVICES</h1>
                         
                         <p class="header-p">Turning vision into reality...</p>
-                        <!-- <a href="contact.html" class="btn btn-primary header-btn">TALK TO US</a> -->
                         
-                        <a href="contact.html" class="btn btn-outline-primary ms-3 header-btn">VISIT US FOR MORE INFORMATION</a>
+                        
+                        <a href="contact.html#services" class="btn btn-outline-primary ms-3 header-btn">VISIT US FOR MORE INFORMATION</a>
                     </div>
                 </div>
             </div>
@@ -131,15 +240,14 @@
                         <h1 class="display-3 my-4">OUR SERVICES</h1>
                         
                         <p class="header-p">Turning vision into reality...</p>
-                        <!-- <a href="contact.html" class="btn btn-primary header-btn">TALK TO US</a> -->
                         
-                        <a href="contact.html" class="btn btn-outline-primary ms-3 header-btn">VISIT US FOR MORE INFORMATION</a>
+                        <a href="contact.html#services" class="btn btn-outline-primary ms-3 header-btn">VISIT US FOR MORE INFORMATION</a>
                     </div>
                 </div>
             </div>
         </div>
         
-    </div>
+    </div> -->
 
 
 
