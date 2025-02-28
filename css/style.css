@@ -534,25 +534,39 @@ marquee{
 }
 
 /* OUR SERVICES */
+#portfolio {
+    background: #FFFFFF; /* White for clean contrast */
+    padding: 5rem 0;
+}
+
+#portfolio h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: #4E4FEB; /* Match navbar blue */
+    text-transform: uppercase;
+}
+
 .project {
     position: relative;
     overflow: hidden;
-    border-radius: 8px;
-  }
-  
-  .project img {
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.project img {
     width: 100%;
-    height: 400px;
+    height: 350px; /* Flexible starting point */
     object-fit: cover;
     transition: transform 0.5s ease;
-  }
-  
-  .project:hover img {
+}
+
+.project:hover img {
     transform: scale(1.1);
-  }
-  
-  .overlay {
-    background: rgba(0, 0, 0, 0.6);
+}
+
+.overlay {
+    background: rgba(78, 79, 235, 0.8); /* Blue overlay with transparency */
     position: absolute;
     top: 0;
     left: 0;
@@ -560,50 +574,142 @@ marquee{
     height: 100%;
     opacity: 0;
     transition: opacity 0.5s ease;
-  }
-  
-  .project:hover .overlay {
-    opacity: 1;
-  }
-  
-  .content h2 {
-    font-size: 28px;
-    font-weight: bold;
-    font-family: "Montserrat", sans-serif;
-    color: #fff;
-  }
-  
-  .content h6 a {
-    font-size: 16px;
-    font-weight: 500;
-    text-transform: uppercase;
-    transition: color 0.3s ease;
 }
-/* CLIENT  */
+
+.project:hover .overlay {
+    opacity: 1;
+}
+
+.content h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.content .btn {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    padding: 0.5rem 1.5rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.content .btn:hover {
+    background-color: #FFFFFF;
+    color: #4E4FEB;
+}
+
+/* Owl Carousel adjustments */
+.owl-nav .owl-prev,
+.owl-nav .owl-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    color: #4E4FEB;
+}
+
+.owl-nav .owl-prev { left: -30px; }
+.owl-nav .owl-next { right: -30px; }
+
+.owl-dots {
+    margin-top: 1rem;
+}
+
+.owl-dots .owl-dot span {
+    background: #CACED6; /* Light grey */
+}
+
+.owl-dots .owl-dot.active span,
+.owl-dots .owl-dot:hover span {
+    background: #4E4FEB; /* Blue for active */
+}
+
+/* Mobile adjustments */
+@media (max-width: 991.98px) {
+    #portfolio {
+        padding: 3rem 0;
+    }
+    #portfolio h1 {
+        font-size: 2rem;
+    }
+    .project img {
+        height: 300px;
+    }
+    .content h2 {
+        font-size: 1.25rem;
+    }
+    .content .btn {
+        font-size: 0.85rem;
+        padding: 0.4rem 1rem;
+    }
+}
+/* Clients section */
 #clients {
+    /* background: linear-gradient(rgba(78, 79, 235, 0.7), rgba(78, 79, 235, 0.7)), url('img/clients.jpg'); */
     background-size: cover;
     background-position: center;
-  }
-  
-  #clients h2 {
-    font-size: 36px;
-    color: #fff;
-    font-weight: 700;
-  }
-  
-  .client-logo img {
-    max-width: 150px;
-    height: auto;
-    padding: 10px;
-    transition: transform 0.3s ease;
-  }
-  
-  .client-logo img:hover {
-    transform: scale(1.1);
-  }
+    padding: 5rem 0;
+}
 
-#clients button{
-    background: #555555;
+#clients h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.client-logo {
+    transition: transform 0.3s ease;
+}
+
+.client-logo img {
+    width: 100%;
+    max-width: 120px; /* Consistent size */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.client-logo:hover {
+    transform: scale(1.1); /* Subtle hover effect */
+}
+
+#clients .btn {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 0.75rem 2rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#clients .btn:hover {
+    background-color: #4E4FEB;
+    color: #FFFFFF;
+    border-color: #4E4FEB;
+}
+
+@media (max-width: 991.98px) {
+    #clients {
+        padding: 3rem 0;
+    }
+    #clients h2 {
+        font-size: 2rem;
+    }
+    .client-logo img {
+        max-width: 100px;
+    }
+    #clients .btn {
+        font-size: 0.9rem;
+        padding: 0.5rem 1.5rem;
+    }
 }
 
 /* OUR PARTNERS  */
@@ -758,10 +864,10 @@ marquee{
         padding: 0 15px; /* Add padding to prevent content from touching the edges */
     }
 }
-#our-team p{
+/* #our-team p{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
-}
+} */
 /* FROM THE FOUNDER'S DESK */
 #reviews {
 
@@ -822,6 +928,127 @@ marquee{
 .review .stars {
     color: var(--brand);
 }
+
+/* Contact Agent section */
+#contact-agent {
+    background: #F9F9F9;
+    padding: 5rem 0;
+}
+
+#contact-agent .bg-light {
+    background: #F5F7FA; /* Slightly lighter grey */
+    border-radius: 15px;
+}
+
+#contact-agent .border-dashed {
+    border: 3px dashed #4E4FEB; /* Match site blue */
+    background: #FFFFFF;
+    border-radius: 10px;
+}
+
+#contact-agent h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    color: #4E4FEB;
+    margin-bottom: 1.5rem;
+}
+
+#contact-agent p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: #333333;
+    line-height: 1.6;
+}
+
+#contact-agent img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+#contact-agent img:hover {
+    transform: scale(1.02);
+}
+
+#contact-agent .btn {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#contact-agent .btn-primary {
+    background-color: #4E4FEB;
+    border-color: #4E4FEB;
+}
+
+#contact-agent .btn-primary:hover {
+    background-color: #3b3fd9;
+    transform: translateY(-2px);
+}
+
+#contact-agent .btn-dark {
+    background-color: #333333;
+    border-color: #333333;
+}
+
+#contact-agent .btn-dark:hover {
+    background-color: #1a1a1a;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 991.98px) {
+    #contact-agent {
+        padding: 3rem 0;
+    }
+    #contact-agent .row {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    #contact-agent .col-lg-6 {
+        width: 100%;
+    }
+    #contact-agent h2 {
+        font-size: 1.75rem;
+    }
+    #contact-agent p {
+        font-size: 1rem;
+    }
+    #contact-agent .d-flex {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    #contact-agent .btn {
+        width: 90%;
+        margin-bottom: 1rem;
+    }
+    #contact-agent .p-5 {
+        padding: 2rem !important;
+    }
+}
+
+@media (max-width: 767.98px) {
+    #contact-agent .p-5 {
+        padding: 1.5rem !important;
+    }
+    #contact-agent h2 {
+        font-size: 1.5rem;
+    }
+    #contact-agent p {
+        font-size: 0.9rem;
+    }
+    #contact-agent .btn {
+        font-size: 0.9rem;
+        padding: 0.6rem 1.2rem;
+    }
+}
+
 
 /* WHO WE ARE SECTION  */
 #services {
@@ -1085,62 +1312,207 @@ marquee{
     text-align: center;
 }
 /* Remove card background */
+#partners {
+    background: #F5F7FA; /* Light grey-white, consistent with earlier sections */
+    padding: 5rem 0;
+}
+
+#partners h1 {
+    font-family: 'Montserrat', sans-serif; /* Consistent with site */
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: #4E4FEB; /* Site blue */
+    margin-bottom: 1.5rem;
+}
+
 #partners .card {
-    background: transparent; /* No background color */
-    border: none; /* Remove any border */
-    box-shadow: none; /* Remove shadow */
+    background: #FFFFFF;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Adjust card body for alignment */
-#partners .card-body {
-    background: transparent; /* Ensure full transparency */
-    text-align: center; /* Center align text */
+#partners .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
 }
 
-/* Make sure images are fully visible */
-#partners img {
-    height: auto;
-    max-height: 360px;
+#partners .card-img-top img {
     width: 100%;
-    object-fit: contain;
+    height: 360px;
+    object-fit: cover; /* Changed to cover for a polished look */
+    border-radius: 10px 10px 0 0;
+    transition: transform 0.3s ease;
 }
 
-/* Responsive Design */
-@media (max-width: 992px) { /* Tablets and below */
-    #partners .col-lg-4, 
+#partners .card:hover .card-img-top img {
+    transform: scale(1.05);
+}
+
+#partners .card-body {
+    padding: 1.5rem;
+    text-align: center;
+}
+
+#partners .card-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: #4E4FEB; /* Site blue */
+    margin-bottom: 0.5rem;
+}
+
+#partners .text-muted {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 0.9rem;
+    color: #666666; /* Darker grey */
+}
+
+#partners .accordion-button {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #4E4FEB;
+    background: transparent;
+    border: none;
+    padding: 0.75rem 0;
+}
+
+#partners .accordion-button:not(.collapsed) {
+    color: #3b3fd9; /* Slightly darker blue when open */
+    background: transparent;
+    box-shadow: none;
+}
+
+#partners .accordion-body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 0.9rem;
+    color: #666666;
+    line-height: 1.6;
+    text-align: left;
+}
+
+@media (max-width: 991.98px) {
+    #partners {
+        padding: 3rem 0;
+    }
+    #partners h1 {
+        font-size: 2rem;
+    }
+    #partners .card-img-top img {
+        height: 300px;
+    }
+    #partners .card-title {
+        font-size: 1.1rem;
+    }
+    #partners .text-muted,
+    #partners .accordion-body {
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 767.98px) {
+    #partners .col-lg-4,
     #partners .col-md-6 {
-        width: 100%; /* Single column layout */
+        margin-bottom: 2rem; /* Space between stacked cards */
     }
-
-    #partners img {
-        max-height: 300px;
-    }
-}
-
-@media (max-width: 768px) { /* Mobile devices */
-    #partners img {
-        max-height: 250px;
-    }
-
-    #partners .btn {
-        width: 100%;
-        margin-bottom: 10px;
-    }
-}
-
-@media (max-width: 576px) { /* Small mobile screens */
-    #partners img {
-        max-height: 200px;
+    #partners .card-img-top img {
+        height: 250px;
     }
 }
 
 
-#management-team img{
-    height: 350px;
-    
+
+#management-team {
+    background: rgb(235, 235, 245); 
+    padding: 5rem 0;
 }
-#management-team .row{
-    display: flex;
+
+#management-team h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: #4E4FEB; /* Site blue */
+    margin-bottom: 1.5rem;
+}
+
+.manager {
+    background: #F5F7FA; /* Light grey background */
+    padding: 1.5rem;
+    border-radius: 15px; /* More rounded corners */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.manager-card:hover {
+    transform: scale(1.05); /* Scale up instead of lift */
+    box-shadow: 0 8px 20px rgba(78, 79, 235, 0.2); /* Blue-tinted shadow */
+}
+
+.manager img {
+    width: 100%;
+    height: 300px; /* Slightly shorter than #team */
+    object-fit: cover;
+    object-position: top;
+
+    border-radius: 10px; /* Rounded image */
+    margin-bottom: 1rem;
+}
+
+.manager h5 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: #333333; /* Dark grey */
+    margin-bottom: 0.25rem;
+}
+
+.manager small {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 0.85rem;
+    color: #4E4FEB; /* Blue for titles */
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.manager p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #666666; /* Darker grey */
+}
+
+@media (max-width: 991.98px) {
+    #management-team {
+        padding: 3rem 0;
+    }
+    #management-team h1 {
+        font-size: 2rem;
+    }
+    .manager img {
+        height: 250px;
+    }
+    .manager h5 {
+        font-size: 1.1rem;
+    }
+    .manager small {
+        font-size: 0.8rem;
+    }
+    .manager p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .manager {
+        margin-bottom: 1.5rem; /* Space between stacked cards */
+    }
+    .manager img {
+        height: 200px;
+    }
 }
 
 
@@ -1765,6 +2137,71 @@ input.form-control {
     }
 }
 
+/* Banner section */
+.banner {
+    background: #FFFFFF;
+    padding: 5rem 0; /* Consistent with other sections */
+}
+
+.banner h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 4rem; /* Adjusted from display-1 for control */
+    color: #4E4FEB; /* Site blue */
+    margin-bottom: 1.5rem;
+}
+
+.banner .lead {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 1.25rem;
+    color: #666666; /* Darker grey for readability */
+    line-height: 1.6;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    max-height: 450px;
+    object-fit: cover;
+    border-radius: 15px; /* Softer corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Deeper shadow */
+    transition: transform 0.3s ease;
+}
+
+.banner img:hover {
+    transform: scale(1.02); /* Subtle hover effect */
+}
+
+@media (max-width: 991.98px) {
+    .banner {
+        padding: 3rem 0;
+    }
+    .banner h1 {
+        font-size: 3rem;
+    }
+    .banner .lead {
+        font-size: 1.1rem;
+    }
+    .banner .p-5 {
+        padding: 2rem !important; /* Adjust padding */
+    }
+}
+
+@media (max-width: 767.98px) {
+    .banner h1 {
+        font-size: 2.5rem;
+    }
+    .banner .lead {
+        font-size: 1rem;
+    }
+    .banner img {
+        max-height: 350px; /* Smaller on mobile */
+    }
+    .banner .p-5 {
+        padding: 1.5rem !important;
+    }
+}
 
 
   
@@ -1791,6 +2228,7 @@ input.form-control {
 .project1 img {
     transition: all 0.4s ease;
     height: 300px;
+    border-radius: 30px;
 }
 
 .project1:hover .overlay{
@@ -2012,9 +2450,116 @@ input.form-control {
     font-size: 20px;
 }
 
-/* MODAL  */
-#exampleModal label{
+/* Modal section */
+#exampleModal .modal-content {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#exampleModal .bg-image {
+    background: linear-gradient(rgba(78, 79, 235, 0.7), rgba(78, 79, 235, 0.7)), url('img/csc.webp');
+    background-size: cover;
+    background-position: center;
+    min-height: 300px;
+}
+
+#exampleModal h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    color: #4E4FEB;
+    margin-bottom: 0.5rem;
+}
+
+#exampleModal p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #333333;
+    margin-bottom: 2rem;
+}
+
+#exampleModal label {
+    font-family: 'Montserrat', sans-serif;
     font-weight: 600;
+    font-size: 0.9rem;
+    color: #333333;
+}
+
+#exampleModal .form-control {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #CACED6;
+    padding: 0.75rem;
+    transition: border-color 0.3s ease;
+}
+
+#exampleModal .form-control:focus {
+    border-color: #4E4FEB;
+    box-shadow: 0 0 5px rgba(78, 79, 235, 0.5);
+}
+
+#exampleModal textarea {
+    resize: vertical;
+}
+
+#exampleModal .btn-primary {
+    background-color: #4E4FEB;
+    border-color: #4E4FEB;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#exampleModal .btn-primary:hover {
+    background-color: #3b3fd9;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 991.98px) {
+    #exampleModal .modal-xl {
+        max-width: 90%;
+    }
+    #exampleModal .bg-image {
+        min-height: 200px;
+    }
+    #exampleModal .p-lg-5 {
+        padding: 2rem !important;
+    }
+    #exampleModal h1 {
+        font-size: 1.75rem;
+    }
+    #exampleModal p {
+        font-size: 0.9rem;
+    }
+    #exampleModal .form-control {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 767.98px) {
+    #exampleModal .row {
+        flex-direction: column;
+    }
+    #exampleModal .col-lg-4,
+    #exampleModal .col-lg-8 {
+        width: 100%;
+    }
+    #exampleModal .p-lg-5 {
+        padding: 1.5rem !important;
+    }
+    #exampleModal h1 {
+        font-size: 1.5rem;
+    }
+    #exampleModal .btn-primary {
+        width: 100%;
+    }
 }
 
 #partners h1 {
@@ -2142,31 +2687,55 @@ input.form-control {
     opacity: 1;
     visibility: visible;
   }
-  
+
+  /* WHO WE ARE SECTION */
 
   #services h1 {
-    font-size: 36px;
-    font-weight: bold;
-  }
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: #4E4FEB; /* Site blue */
+    margin-bottom: 1.5rem;
+}
+#services p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 1.25rem;
+    /* color: #666666;  */
+    line-height: 1.6;
+}
 #services h1:hover{
     background: none;
 }
   
-  .service-card h4 {
-    font-size: 24px;
+.service-card {
+    background: #F9F9F9; /* Kept original light grey */
+    border: 1px solid #CACED6; /* Light grey, replacing #ddd */
+    padding: 1.5rem;
+    border-radius: 10px; /* Slightly more rounded than #services */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px); /* Subtle lift, consistent with #branch-representatives */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    border-color: #4E4FEB; /* Blue border on hover */
+}
+
+.service-card h4 {
+    font-family: 'Montserrat', sans-serif;
     font-weight: 600;
-  }
-  
-  .service-card p {
-    font-size: 16px;
-    line-height: 1.6;
-    color: #666;
-  }
-  
-  .service-card:hover {
-    background-color: #e6f2ff;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
-  }
+    font-size: 1.5rem;
+    color: #4E4FEB; /* Site blue, replacing #003366 */
+    margin-bottom: 1rem;
+}
+
+.service-card p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #666666; /* Consistent with section text */
+    line-height: 1.7;
+}
 
   
