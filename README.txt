@@ -1,12 +1,3 @@
-# Prixima
-A Bootstrap multipurpose template
-
-# Demo
-- https://prixima.netlify.app/
-
-# Clone Project
-- https://github.com/SA7MAN/Prixima
-
 # Features
 - Fully Responsive
 - Mobile Navigations
@@ -22,7 +13,4 @@ A Bootstrap multipurpose template
 - https://unsplash.com/
 - https://michalsnik.github.io/aos/
 
-
-# Watch more
-For more videos visit to my YouTube channel. [SA7MAN](https://www.youtube.com/c/SA7MAN)
 
